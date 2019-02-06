@@ -23,6 +23,6 @@ const schema = Joi.object()
 // Return result.
 const result = Joi.validate({ username: '123', birthyear:2012, password: "hello", asd:123}, schema);
 /**
- * If in case the validation fails
+ * If in case the validation fails we will have an object result.error otherwise error is null.
  */
 console.log('', result);
